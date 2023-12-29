@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <main>
+        <div class="temp-sec">
+            <div class="search">
+                <input id="input" type="text" placeholder="Nangthala ,Hisar">
+                <i id="btn" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="img">
+                <i class="fa-solid fa-cloud-sun"></i>
+            </div>
+            <div class="temp">
+                <span>
+                    <h1 id="temp">31</h1> <span>&deg;C</span>
+                </span>
+                <p id="clooud">Mostly Cloud</p>
+                <div class="hr"></div>
+            </div>
+            <div class="date-time">
+                <p>12-July-2023</p>
+                <p class="day">Friday, 12.44 PM</p>
+                <p class="day">Day</p>
+            </div>
+
+            <div class="city">
+                <p id="city">Sirsa</p>
+            </div>
+        </div>
+        <div class="next-sec">
+            <nav>
+                <h1 id="today">Today</h1>
+                <h1 id="tomorrow" class="opacity">Tomorrow</h1>
+            </nav>
+            <div class="grid">
+                <div class="box">
+                    <p>Wind</p>
+                    <div class="flex-span"><span id="wind">42 </span><span>km/h</span></div>
+                    <p>East</p>
+                </div>
+                <div class="box">
+                    <p>Humadity</p>
+                    <div class="flex-span"><span id="humi">69</span><span>%</span></div>
+                    <!-- <p>East</p> -->
+                </div>
+                <div class="box">
+                    <p>Real Feel</p>
+                    <div class="flex-span"><span id="realFeel">31 </span><span>&deg;C</span></div>
+                    <!-- <p>East</p> -->
+                </div>
+                <div class="box">
+                    <p>UV Indes</p>
+                    <div class="flex-span"><span>3 </span><span></span></div>
+                    <p>Moderate</p>
+                </div>
+                <div class="box">
+                    <p>Pressure</p>
+                    <div class="flex-span"><span id="presure">1000 </span><span>mb</span></div>
+                    <!-- <p>East</p> -->
+                </div>
+                <div class="box">
+                    <p>Change of rain</p>
+                    <div class="flex-span"><span>70 </span><span>%</span></div>
+                    <!-- <p>East</p> -->
+                </div>
+                <div class="box">
+                    <p>Temperature History</p>
+                    <div class="flex-span"><span>31 </span><span>&deg;C</span> <br><span>31&deg;C</span></div>
+                    
+                </div>
+                <div class="box">
+                    <p>Sun</p>
+                    <div class="flex-span"><span>Rise    </span><span>5.17 am</span></div>
+                    <div class="flex-span"><span>Set    </span><span>5.17 am</span></div>
+                    <!-- <p>East</p> -->
+                </div>
+                <div class="box">
+                    <p>Moon</p>
+                    <div class="flex-span"><span>Rise   </span><span>5.17am</span></div>
+                    <div class="flex-span"><span>Set   </span><span>5.17am</span></div>
+                    <p>East</p>
+                </div>                 
+            </div>
+            <footer>All Data provided by <p>Company Name</p></footer>
+
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
